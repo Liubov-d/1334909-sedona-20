@@ -1,177 +1,181 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="../fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body class="page__body">
   <header class="page-header">
-  	<a class="page-header__logo" href="index.html">
+  <a class="page-header__logo" href="index.html">
       <img src="img/logotype-mobile.svg" width="102" height="84" alt="Перейти на главную страницу">
     </a>
     <nav class="main-nav">
-    	<button class="main-nav__toggle" type="button">
+  <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-    		<ul class="main-nav__list site-list">
-	        <li class="site-list__item">
-	        	<a href="index.html">
-	            Главная
-	          </a>
-	        </li>
-	        <li class="site-list__item">
-	          <a href="photo.html">
-	            Фото и видео
-	          </a>
-	        </li>
-	        <li class="site-list__item site-list__item--active">
-	          <a>
-	            Форма Отзыва
-	          </a>
-	        </li>
-	        <li class="site-list__item">
-	          <a href="#">
-	            HTML Academy
-	          </a>
-	        </li>
-      	</ul>
-      </div>
-    </nav>
-	</header>
-  <main class="page-main">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-main">
 
-  	<h1 class="visually-hidden">СЕДОНА</h1>
+  <h1 class="visually-hidden">СЕДОНА</h1>
 
-  	<section class="reviews">
-  		<div class="reviews__header">
-        <h2 class="reviews__title">Оставьте свой отзыв</h2>
-        <p class="reviews__description">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-        </p>      
-      </div>
-      <div class="reviews__image">
-      	<img class="reviews__backgroung"src="img/back-mobile.jpg" width="901" height="389" alt="фото каньона Дьявола">
-      	<img class="reviews__icon"src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
-      </div>
-  	</section>
-
-    <section class="filters"> 
-      <h2 class="visually-hidden">Форма отзыва</h2>
-
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-
-        <fieldset class="filter__set filter__name">
-          <legend class="filter__legend">Представьтесь:</legend>
-          <ul class="filter__list">
-            <li class="filter__item filter__item--name">
-              <label for="name-field">Имя*:</label>
-              <input class="filter__input" type="text" name="name" id="name-field" value="" placeholder="Петр" required>
-            </li>
-            <li class="filter__item filter__item--surname">
-              <label for="surname-field">Фамилия:</label>
-              <input class="filter__input" type="text" name="surname" id="surname-field" value="" placeholder="Иванов">
-            </li>
-            <li class="filter__item filter__item--patronymic">
-              <label for="patronymic-field ">Отчество:</label>
-              <input class="filter__input" type="text" name="patronymic" id="patronymic-field" value="" placeholder="Александрович">
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="filter__set filter__contacts">
-          <legend class="filter__legend">Контактная информация:</legend>
-          <ul class="filter__list">
-            <li class="filter__item filter__item--tel">
-              <label for="tel-field">Контактный телефон*:</label>
-              <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
-            </li>
-            <li class="filter__item filter__item--surname">
-              <label for="email-field">Электронная почта*:</label>
-              <input class="filter__input" type="email" name="email" id="email-field" value="" placeholder="Введите e-mail" required>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="filter__set filter__impression">
-          <legend class="filter__legend">Ваше общее впечатление:</legend>
-          <ul class="filter__list">
-            <li class="filter__item filter__item--positive">
-              <label for="positive-field">Скорее положительное</label>
-              <input class="filter__input" type="radio" name="impression" id="positive-field" value="positive" checked>
-            </li>
-            <li class="filter__item filter__item--negative">
-              <label for="negative-field">Скорее отрицательное</label>
-              <input class="filter__input" type="radio" name="impression" id="negative-field" value="negative">
-            </li>
-            <li class="filter__item filter__item--neutral">
-              <label for="neutral-field">Затрудняюсь ответить</label>
-              <input class="filter__input" type="radio" name="impression" id="neutral-field" value="neutral">
-            </li>
-          </ul>
-        </fieldset>
-
-
-        <fieldset class="filter__set filter__attractions">
-          <legend class="filter__legend">Посещенные  достопримечательности:</legend>
-          <ul class="filter__list">
-            <li class="filter__item filter__item--devil-bridge">
-              <label for="devil-bridge-field">Мост Дьявола</label>
-              <input class="filter__input" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
-            </li>
-            <li class="filter__item filter__item--bell-mountain">
-              <label for="bell-mountain-field">Гора-Колокол</label>
-              <input class="filter__input" type="checkbox" name="bell-mountain" id="bell-mountain-field" checked>
-            </li>
-            <li class="filter__item filter__item--slide-park">
-              <label for="slide-park-field">Слайд-парк</label>
-              <input class="filter__input" type="checkbox" name="slide-park" id="slide-park" checked>
-            </li>
-            <li class="filter__item filter__item--red-rocks">
-              <label for="red-rocks-field">Красные скалы</label>
-              <input class="filter__input" type="checkbox" name="red-rocks" id="red-rocks-field">
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="filter__set filter__review">
-          <legend class="filter__legend">Опишите свои эмоции:</legend>
-          <ul class="filter__list">
-            <li class="filter__item filter__item--review">
-              <label for="review-field">Мост Дьявола</label>
-              <textarea class="filter__input" name="review" id="review-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-            </li>
-          </ul>
-        </fieldset>
-
-        <button class="filter__button button" type="submit">Отправить отзыв</button>
-
-      </form>
-    </section>
-
-  	<footer class="page-footer">
-      <div class="page-footer__wrapper">
-      	<p class="page-footer__title">
-        <div class="page-footer__social social">
-            <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
-            </li>
-          </ul>
+  <section class="reviews">
+  <div class="reviews__header">
+    <h2 class="reviews__title">Оставьте свой отзыв</h2>
+    <p class="reviews__description">
+      Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </p>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>  	  
-    
-  </main>  
+  <div class="reviews__image">
+    <img class="reviews__backgroung"src="img/back-mobile.jpg" width="901" height="389" alt="фото каньона Дьявола">
+    <img class="reviews__icon"src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
+  </div>
+</section>
+
+  <section class="filters">
+    <h2 class="visually-hidden">Форма отзыва</h2>
+
+  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+
+    <fieldset class="filter__set filter__name">
+      <legend class="filter__legend">Представьтесь:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--name">
+          <label for="name-field">Имя*:</label>
+          <input class="filter__input" type="text" name="name" id="name-field" value="" placeholder="Петр" required>
+        </li>
+        <li class="filter__item filter__item--surname">
+          <label for="surname-field">Фамилия:</label>
+          <input class="filter__input" type="text" name="surname" id="surname-field" value="" placeholder="Иванов">
+        </li>
+        <li class="filter__item filter__item--patronymic">
+          <label for="patronymic-field ">Отчество:</label>
+          <input class="filter__input" type="text" name="patronymic" id="patronymic-field" value="" placeholder="Александрович">
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="filter__set filter__contacts">
+      <legend class="filter__legend">Контактная информация:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--tel">
+          <label for="tel-field">Контактный телефон*:</label>
+          <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
+        </li>
+        <li class="filter__item filter__item--surname">
+          <label for="email-field">Электронная почта*:</label>
+          <input class="filter__input" type="email" name="email" id="email-field" value="" placeholder="Введите e-mail" required>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="filter__set filter__impression">
+      <legend class="filter__legend">Ваше общее впечатление:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--positive">
+          <label for="positive-field">Скорее положительное</label>
+          <input class="filter__input" type="radio" name="impression" id="positive-field" value="positive" checked>
+        </li>
+        <li class="filter__item filter__item--negative">
+          <label for="negative-field">Скорее отрицательное</label>
+          <input class="filter__input" type="radio" name="impression" id="negative-field" value="negative">
+        </li>
+        <li class="filter__item filter__item--neutral">
+          <label for="neutral-field">Затрудняюсь ответить</label>
+          <input class="filter__input" type="radio" name="impression" id="neutral-field" value="neutral">
+        </li>
+      </ul>
+    </fieldset>
+
+
+    <fieldset class="filter__set filter__attractions">
+
+      <legend class="filter__legend">Посещенные  достопримечательности:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--devil-bridge">
+          <label for="devil-bridge-field">Мост Дьявола</label>
+          <input class="filter__input" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
+        </li>
+        <li class="filter__item filter__item--bell-mountain">
+          <label for="bell-mountain-field">Гора-Колокол</label>
+          <input class="filter__input" type="checkbox" name="bell-mountain" id="bell-mountain-field" checked>
+        </li>
+        <li class="filter__item filter__item--slide-park">
+          <label for="slide-park-field">Слайд-парк</label>
+          <input class="filter__input" type="checkbox" name="slide-park" id="slide-park" checked>
+        </li>
+        <li class="filter__item filter__item--red-rocks">
+          <label for="red-rocks-field">Красные скалы</label>
+          <input class="filter__input" type="checkbox" name="red-rocks" id="red-rocks-field">
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="filter__set filter__review">
+      <legend class="filter__legend">Опишите свои эмоции:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--review">
+          <label for="review-field">Мост Дьявола</label>
+          <textarea class="filter__input" name="review" id="review-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <button class="filter__button button" type="submit">Отправить отзыв</button>
+
+  </form>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="page-footer__title">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+
+</main>
 </body>
 </html>
