@@ -9,55 +9,61 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Перейти на главную страницу">
-    </a>
     <nav class="main-nav">
-  <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a>
-            Форма Отзыва
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
+      <div class="main-nav__container">
+            <div class="main-nav__wrapper-left">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">
+                  Фото и видео
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-nav__wrapper-right">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a href="form.html">
+                  Форма Отзыва
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-nav__logo-wrap">
+            <a class="main-nav__logo" href="index.html">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Перейти на главную страницу">
+            </a>
+      </div>
+         <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
     </div>
-  </nav>
-</header>
-<main class="page-main">
+    </nav>
+  </header>
+  <main class="page-inner">
 
-  <h1 class="visually-hidden">СЕДОНА</h1>
+    <h1 class="visually-hidden">СЕДОНА</h1>
 
-  <section class="reviews">
-  <div class="reviews__header">
-    <h2 class="reviews__title">Оставьте свой отзыв</h2>
-    <p class="reviews__description">
-      Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-        </div>
-  <div class="reviews__image">
-    <img class="reviews__backgroung"src="img/back-mobile.jpg" width="901" height="389" alt="фото каньона Дьявола">
-    <img class="reviews__icon"src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
+  <section class="intro">
+  <div class="intro__image--active">
   </div>
-</section>
+  <div class="intro__header">
+   <h2 class="intro__title">Оставьте свой отзыв</h2>
+    <p class="intro__description">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+    </p>
+  </div>
+  </section>
 
   <section class="filters">
     <h2 class="visually-hidden">Форма отзыва</h2>
@@ -153,23 +159,23 @@
 
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <p class="page-footer__title">
+    <p class="page-footer__title">#visitSEDONA</p>
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+        <li class="social__item button">
+          <a class="social__link social__link--twitter visually-hidden" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <li class="social__item button">
+          <a class="social__link social__link--facebook visually-hidden" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+        <li class="social__item button">
+          <a class="social__link social__link--youtube visually-hidden" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </div>
 </footer>

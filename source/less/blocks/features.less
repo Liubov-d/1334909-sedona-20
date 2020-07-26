@@ -6,12 +6,15 @@ line-height: 21px;
 font-weight: normal;
 }
 
-.features__list {
-list-style: none;
-}
-
 .features__item {
 background-color: @white;
+text-align: left;
+@media (min-width: @tablet-width) {
+text-align: center;
+}
+@media (min-width: @desktop-width) {
+text-align: center;
+}
 }
 
 .features__title {
@@ -19,12 +22,24 @@ margin-top: 40px;
 font-size: 18px;
 line-height: 26px;
 font-weight: bold;
-text-align: left;
 color: @black;
 }
 
 .features__description {
 margin-top: 10px;
-text-align: left;
 color: @darkgray;
 }
+
+.features__wrapper {
+@media (min-width: @tablet-width) {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+@media (min-width: @desktop-width) {
+margin: auto;
+max-width: @desktop-width;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+}
+

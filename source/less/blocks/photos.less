@@ -7,20 +7,33 @@ font-weight: normal;
 background-color: @white;
 }
 
-.photos__list {
-list-style: none;
+.photos__wrapper {
+padding-left: 20px;
+padding-right: 20px;
+@media (min-width: @tablet-width) {
+padding-left: 60px;
+padding-right: 60px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 480 347 347;
+}
+@media (min-width: @desktop-width) {
+margin: auto;
+max-width: @desktop-width;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 400 267;
+}
 }
 
-.photos__title,
-.like__number  {
-font-size: 14px;
-line-height: 24px;
-font-weight: bold;
-text-align: left;
-color: @black;
+.photos-1 {
+@media (min-width: @tablet-width) {
+grid-column-start: 1;
+grid-column-end: -1;
+}
+@media (min-width: @desktop-width) {
+grid-column-start: 1;
+grid-column-end: -1;
+}
 }
 
-.photos__author {
-text-align: left;
-color: @darkgray;
-}

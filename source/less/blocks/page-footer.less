@@ -1,10 +1,33 @@
 .page-footer {
-padding-left: 20px;
-padding-right: 20px;
 font-size: 14px;
 line-height: 26px;
 font-weight: normal;
 background-color: @white;
+}
+
+.page-footer__wrapper {
+width: 100%;
+@media (min-width: @tablet-width) {
+display: flex;
+justify-content: space-between;
+margin: auto;
+max-width: @tablet-width;
+}
+@media (min-width: @desktop-width) {
+display: flex;
+justify-content: space-between;
+max-width: @desktop-width;
+margin: auto;
+}
+}
+
+.page-footer__social {
+width: 166px;
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding: 0;
+margin: auto;	
 }
 
 .social__list {
@@ -20,8 +43,9 @@ text-align: center;
 color: @black;
 }
 
-.copyright__text  {
+.page-footer__copyright {
+width: 166px;
 margin-top: 10px;
-text-align: left;
+text-align: center;
 color: @black;
 }
