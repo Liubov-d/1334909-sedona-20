@@ -9,7 +9,10 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__container">
             <div class="main-nav__wrapper-left">
             <ul class="main-nav__list">
@@ -39,17 +42,17 @@
               </li>
             </ul>
           </div>
-          <div class="main-nav__logo-wrap">
+    </div>
+    </nav>
+              <div class="main-nav__logo-wrap">
           <a class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
         </a>
       </div>
-         <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-    </div>
-    </nav>
   </header>
+
+  <script src="js/main-nav.js"></script>
+
   <main class="page-main">
 
     <h1 class="visually-hidden">СЕДОНА — о городе и его окрестностях</h1>
@@ -59,7 +62,7 @@
   </div>
 
   <div class="intro__header">
-   <h2 class="intro__title">СЕДОНА — небольшой  городок в Аризоне,  заслуживающий большего!</h2>
+   <h2 class="intro__title">СЕДОНА — небольшой  городок в Аризоне,  заслуживающий большего!</h2>
     <p class="intro__description">
         Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
     </p>
@@ -117,7 +120,8 @@
     </div>
     <div class="advantages__block block6">
       <h3 class="advantages__title">Красивая дорога</h3>
-      <p class="advantages__number">— №4 —</p>        <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      <p class="advantages__number">— №4 —</p>
+      <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
     <div class="advantages__block block7">
       <h3 class="advantages__title">Мало туристов</h3>
@@ -129,7 +133,7 @@
 
 <section class="search-hotel">
   <h2 class="search-hotel__title">Заинтересовались?</h2>
-  <p class="search-hotel__description">Укажите предполагаемые даты  поездки, и мы покажем вам лучшие  предложения гостиниц в Седоне</p>
+  <p class="search-hotel__description">Укажите предполагаемые даты   поездки, и мы покажем вам лучшие   предложения гостиниц в Седоне</p>
   <div class="search-hotel__button">
   <a class="button" href="#">Найти гостиницу</a>
   </div>
@@ -138,9 +142,9 @@
 <section class="map">
   <div class="map__wrapper">
     <h2 class="visually-hidden">Как нас найти</h2>
-    <!--<iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419080.5483420431!2d-112.07529930711044!3d34.85454921928644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595168294170!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <img class="map__img" src="img/map-mobile.jpg" width="320" height="350" alt="Карта штата Аризона">-->
-    <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Здесь находится Седона">
+    <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419080.5483420431!2d-112.07529930711044!3d34.85454921928644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1595168294170!5m2!1sru!2sru" width="1200" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="map__img">
+    </div>
   </div>
 </section>
 

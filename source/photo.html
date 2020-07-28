@@ -67,9 +67,8 @@
 
 <section class="photos">
   <h2 class="visually-hidden">Фотогалерея</h2>
-  <div class="photos__wrapper">
-
-       <div class="photos__item photos-1">
+  <ul class="photos__list wrapper">
+    <li class="photos__item photos-1">
         <div class="item__wrapper">
           <div class="photos__photo photos__photo--sunset">
           </div>
@@ -83,8 +82,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="photos__item">
+    </li>
+    <li class="photos__item">
         <div class="item__wrapper">
           <div class="photos__photo photos__photo--cactus">
           </div>
@@ -98,8 +97,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="photos__item">
+    </li>
+    <li class="photos__item">
         <div class="item__wrapper">
           <div class="photos__photo photos__photo--roads">
           </div>
@@ -113,8 +112,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="photos__item">
+    </li>
+    <li class="photos__item">
         <div class="item__wrapper">
           <div class="photos__photo photos__photo--bridge">
           </div>
@@ -128,8 +127,23 @@
             </div>
           </div>
         </div>
-      </div>
- </div>
+    </li>
+        <li class="photos__item">
+        <div class="item__wrapper">
+          <div class="photos__photo photos__photo--bridge">
+          </div>
+          <div class="photos__caption">
+            <div class="photos__text text">
+              <p class="text__title">Мост дьявола</p>
+              <p class="text__author">Автор фото: Антон</p>
+            </div>
+            <div class="photos__like like">
+              <p class="like__number">254</p>
+            </div>
+          </div>
+        </div>
+    </li>
+  </ul>
 </section>
 
 <section class="video">
@@ -138,20 +152,25 @@
   <p class="video__description">
     Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
   </p>
-  <a class="video__link" href="#">
-    <img src="img/video-mobile.jpg" width="320" height="201" alt="Показать видео презентацию">
-  </a>
-  <div class="video__player">
-    <a class="video__replay" href="#">
-    <img src="img/replay.svg" width="16" height="20" alt="Повтор видео">
-  </a>
-  <a class="video__subtitles" href="#">
-    <img src="img/subtitles.svg" width="32" height="20" alt="Субтитры">
-  </a>
-  <a class="video__fullscreen" href="#">
-    <img src="img/fullscreen.svg" width="20" height="20" alt="Развернуть экран">
-  </a>
-</div>
+  <div class="video__wrapper">
+      <div class="video__images">
+        <a href="#">
+          <img class="hidden" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Показать видео презентацию">
+        </a>
+      </div>
+      <div class="video__player">
+        <div class="video__replay">
+          <a href="#"><img src="img/icon-video-replay.svg" width="16" height="20" alt="Повтор видео"></a>
+        </div>
+        <div class="video__CC-fullscreen">
+          <div class="video__CC">
+            <a href="#"><img src="img/icon-video-subtitles.svg" width="32" height="20" alt="Субтитры"></a>
+          </div>
+          <div class="video__fullscreen">
+            <a href="#"><img src="img/icon-video-fullscreen.svg" width="20" height="20" alt="Развернуть экран"></a>
+          </div>
+      </div>
+  </div>
 </section>
 
 <footer class="page-footer">

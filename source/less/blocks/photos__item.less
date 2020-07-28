@@ -47,14 +47,9 @@ background-image: url("../img/photo-roads-mobile@1x.jpg");
 &--bridge {
 background-image: url("../img/main-bridge-mobile@1x.jpg");
 }
-}
 
 @media (min-width: @tablet-width) {
-.photos__photo {
-height: 400px;
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-size: cover;
+height: 267px;
 &--sunset {
 background-image: url("../img/photo-sunset-tablet@1x.jpg");
 }
@@ -68,14 +63,9 @@ background-image: url("../img/photo-roads-tablet@1x.jpg");
 background-image: url("../img/main-bridge-tablet@1x.jpg");
 }	
 }
-}
 
-.photos__photo {
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-size: cover;
 @media (min-width: @desktop-width) {
-height: 400px;
+height: 267px;
 &--sunset {
 background-image: url("../img/photo-sunset-desktop@1x.jpg");
 }
@@ -87,6 +77,24 @@ background-image: url("../img/photo-roads-desktop@1x.jpg");
 }
 &--bridge {
 background-image: url("../img/main-bridge-desktop@1x.jpg");
+}
+}
+}
+
+
+.photos__item {
+@media (min-width: @tablet-width) {
+&:nth-child(1) {
+.photos__photo {
+height: 400px;	
+}
+}
+}
+@media (min-width: @desktop-width) {
+&:nth-child(1) {
+.photos__photo {
+height: 400px;	
+}
 }
 }
 }

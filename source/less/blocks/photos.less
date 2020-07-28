@@ -7,7 +7,8 @@ font-weight: normal;
 background-color: @white;
 }
 
-.photos__wrapper {
+.photos__list {
+list-style: none;
 padding-left: 20px;
 padding-right: 20px;
 @media (min-width: @tablet-width) {
@@ -15,14 +16,14 @@ padding-left: 60px;
 padding-right: 60px;
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 480 347 347;
+grid-template-rows: min-content max-content max-content;
 }
 @media (min-width: @desktop-width) {
 margin: auto;
 max-width: @desktop-width;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 400 267;
+grid-template-rows: max-content max-content;
 }
 }
 
@@ -32,6 +33,7 @@ grid-column-start: 1;
 grid-column-end: -1;
 }
 @media (min-width: @desktop-width) {
+heigh: 400px;
 grid-column-start: 1;
 grid-column-end: -1;
 }
