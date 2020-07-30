@@ -1,6 +1,4 @@
 .advantages {
-padding-left: 20px;
-padding-right: 20px;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
@@ -48,6 +46,9 @@ color: @white;
 }
 
 .advantages-1__wrapper {
+@media (min-width: @mobile-width-only) {
+display: block;
+}
 @media (min-width: @tablet-width) {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;

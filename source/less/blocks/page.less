@@ -8,8 +8,23 @@ text-transform: uppercase;
 }
 
 .page__body {
+min-width: 320px;
 min-height: 100%;
 margin: 0;
 background-color: @white;
 color: @darkgray;
+}
+
+.body__container {
+width: 280px;
+
+@media (min-width: @tablet-width) {
+width: auto;
+}
+
+@media (min-width: @desktop-width) {
+width: auto;
+margin: auto;
+padding: 0 120px;
+}
 }

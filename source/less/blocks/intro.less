@@ -6,16 +6,14 @@ background-color: @white;
 }
 
 .intro__header {
-min-height: 223px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+min-height: 220px;
 @media (min-width: @tablet-width) {
-
+min-height: 150px;
 }
 @media (min-width: @desktop-width) {
 
 }
+
 }
 
 .intro__title {
@@ -25,16 +23,17 @@ line-height: 26px;
 font-weight: bold;
 text-align: center;
 margin: 0;
-margin-bottom: 40px;
+margin-top: 55px;
 padding: 0;
 padding-left: 20px;
 padding-right: 20px;
 color: @black;
 @media (min-width: @tablet-width) {
 font-size: 21px;
+margin-top: 55px;
 }
 @media (min-width: @desktop-width) {
-font-size: 21px;
+
 }
 }
 
@@ -45,6 +44,12 @@ padding-left: 20px;
 padding-right: 20px;
 text-align: center;
 color: @darkgray;
+@media (min-width: @tablet-width) {
+margin-top: 32px;
+}
+@media (min-width: @desktop-width) {
+
+}
 }
 
 .intro__image {
@@ -68,7 +73,7 @@ background-size: 460px, cover;
 }
 }
 
-.intro__image--active {
+.intro__image--inner {
 height: 158px;
 background-image: url("../img/text-sedona.svg"),
 url("../img/bg-back-mobile@1x.jpg");
