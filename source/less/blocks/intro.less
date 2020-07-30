@@ -5,16 +5,44 @@ font-weight: normal;
 background-color: @white;
 }
 
+.intro__header {
+min-height: 223px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+@media (min-width: @tablet-width) {
+
+}
+@media (min-width: @desktop-width) {
+
+}
+}
+
 .intro__title {
 margin-top: 32px;
 font-size: 18px;
 line-height: 26px;
 font-weight: bold;
 text-align: center;
+margin: 0;
+margin-bottom: 40px;
+padding: 0;
+padding-left: 20px;
+padding-right: 20px;
 color: @black;
+@media (min-width: @tablet-width) {
+font-size: 21px;
+}
+@media (min-width: @desktop-width) {
+font-size: 21px;
+}
 }
 
 .intro__description {
+margin: 0;
+padding: 0;
+padding-left: 20px;
+padding-right: 20px;
 text-align: center;
 color: @darkgray;
 }
