@@ -10,6 +10,9 @@ background-color: @lightgray;
 &--active {
 background-color: @blue;
 }
+@media (min-width: @tablet-width) {
+min-height: 256px;
+}
 }
 
 .advantages__title {
@@ -61,6 +64,13 @@ color: @white;
 @media (min-width: @tablet-width) {
 margin-top: 22px;
 margin-bottom: 22px;
+padding: 0 40px;
+br {
+display: none;
+}
+}
+@media (min-width: @desktop-width) {
+padding: 0 45px;
 }
 }
 
