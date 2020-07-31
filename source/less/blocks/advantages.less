@@ -23,6 +23,14 @@ color: @black;
 &--active {
 color: @white;
 }
+@media (min-width: @tablet-width) {
+margin-top: 43px;
+font-size: 21px;
+line-height: 26px;
+}
+@media (min-width: @desktop-width) {
+margin-top: 50px;
+}
 }
 
 .advantages__number {
@@ -33,15 +41,26 @@ color: @darkgray;
 &--active {
 color: @white;
 }
+@media (min-width: @tablet-width) {
+margin-top: 13px;
+}
+@media (min-width: @desktop-width) {
+
+}
 }
 
 .advantages__description {
 margin: 0;
 margin-top: 10px;
+padding: 0 65px;
 text-align: center;
 color: @darkgray;
 &--active {
 color: @white;
+}
+@media (min-width: @tablet-width) {
+margin-top: 22px;
+margin-bottom: 22px;
 }
 }
 
@@ -62,7 +81,7 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .block2 {
-min-height: 260px;
+min-height: 256px;
 background-image: url("../img/main-city-mobile@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
