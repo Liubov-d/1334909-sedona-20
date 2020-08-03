@@ -1,6 +1,6 @@
 .main-nav {
 
-width: auto;
+width: 100%;
 
 background-color: @blue;
 @media (min-width: @tablet-width) {
@@ -76,7 +76,7 @@ display: none;
     0 18px 0 0 fade(@blue, 30%);
 }
 
-@media (max-width: @mobile-width-only) {
+@media (min-width: @mobile-width-only) {
   .main-nav--closed .main-nav__item {
   display: none;
 

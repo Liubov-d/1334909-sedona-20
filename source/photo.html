@@ -9,15 +9,17 @@
 </head>
 
 
-<!--   --> 
+<!--   
 
  
 <style>
-    /* Используем &lt;html> как слой с макетами */
+    /* Используем &lt;html> как слой с макетами 
+
+    мобилка превью */
   HTML {
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("img/Photo-Mobile-2.jpg");
+    background-image: url("img/Photo-Mobile-closed.jpg");
   }
 
   /* Делаем слой с разметкой полупрозрачным */
@@ -27,7 +29,28 @@
 
  </style>
 
+ -->
 
+<!--    
+
+ 
+<style>
+    /* Используем &lt;html> как слой с макетами 
+    планшет превью */
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url("img/Photo-Tablet.jpg");
+  }
+
+  /* Делаем слой с разметкой полупрозрачным */
+  BODY {
+    opacity: 0.6;
+  }
+
+ </style>
+
+-->
 
 
 <body class="page__body">
@@ -91,26 +114,28 @@
   </div>
   </section>
 
+<script src="js/main-nav.js"></script>
+
 <section class="photos">
   <h2 class="visually-hidden">Фотогалерея</h2>
   <ul class="photos__list wrapper">
-    <li class="photos__item photos-1">
-        <div class="item__wrapper">
-          <div class="photos__photo photos__photo--sunset">
-          </div>
-          <div class="photos__caption">
-            <div class="photos__text text">
-              <p class="text__title">Неродные просторы</p>
-              <p class="text__author">Автор фото: Борис</p>
+    <div class="wrapper__top">
+      <li class="photos__item--top">
+            <div class="photos__photo photos__photo--sunset">
             </div>
-            <div class="photos__like like">
-              <p class="like__number">1350</p>
+            <div class="photos__caption photos__caption--top">
+              <div class="photos__text text">
+                <p class="text__title">Неродные просторы</p>
+                <p class="text__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos__like like">
+                <p class="like__number">1350</p>
+              </div>
             </div>
-          </div>
-        </div>
-    </li>
+      </li>
+    </div>
+    <div class="wrapper__bottom">    
     <li class="photos__item">
-        <div class="item__wrapper">
           <div class="photos__photo photos__photo--cactus">
           </div>
           <div class="photos__caption">
@@ -122,10 +147,8 @@
               <p class="like__number">143</p>
             </div>
           </div>
-        </div>
     </li>
     <li class="photos__item">
-        <div class="item__wrapper">
           <div class="photos__photo photos__photo--roads">
           </div>
           <div class="photos__caption">
@@ -137,11 +160,9 @@
               <p class="like__number">96</p>
             </div>
           </div>
-        </div>
     </li>
     <li class="photos__item">
-        <div class="item__wrapper">
-          <div class="photos__photo photos__photo--bridge">
+        <div class="photos__photo photos__photo--bridge">
           </div>
           <div class="photos__caption">
             <div class="photos__text text">
@@ -151,9 +172,9 @@
             <div class="photos__like like">
               <p class="like__number">254</p>
             </div>
-          </div>
         </div>
-    </li>
+      </li>
+    </div>
   </ul>
 </section>
 
