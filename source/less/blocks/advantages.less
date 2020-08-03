@@ -6,34 +6,61 @@ font-weight: normal;
 
 .advantages__block {
 margin: 0;
+min-height: 168px;
 background-color: @lightgray;
 &--active {
+min-height: 190px;
 background-color: @blue;
 }
 @media (min-width: @tablet-width) {
 min-height: 256px;
+
+}
+@media (min-width: @desktop-width) {
+
 }
 }
 
 .advantages__title {
-margin: 0;
-margin-top: 40px;
 font-size: 18px;
 line-height: 26px;
 font-weight: bold;
 text-align: center;
 color: @black;
-&--active {
-color: @white;
+@media (min-width: @mobile-width-only) {
+margin: 0;
+padding-top: 25px;
+br {
+display: none;
+}
 }
 @media (min-width: @tablet-width) {
-margin-top: 43px;
+br {
+display: block;
+}
 font-size: 21px;
 line-height: 26px;
+padding-top: 40px;
+}
+&--active {
+color: @white;
+@media (min-width: @mobile-width-only) {
+padding-top: 35px;
+}
+@media (min-width: @tablet-width) {
+br {
+display: block;
+}
+padding-top: 40px;
 }
 @media (min-width: @desktop-width) {
-margin-top: 50px;
+padding-top: 50px;
+br {
+display: block;
 }
+}
+}
+
 }
 
 .advantages__number {
@@ -47,23 +74,24 @@ color: @white;
 @media (min-width: @tablet-width) {
 margin-top: 13px;
 }
-@media (min-width: @desktop-width) {
-
-}
 }
 
 .advantages__description {
 margin: 0;
-margin-top: 10px;
-padding: 0 65px;
+padding-top: 17px;
+padding-left: 35px;
+padding-right: 35px;
 text-align: center;
 color: @darkgray;
 &--active {
 color: @white;
+@media (min-width: @mobile-width-only) {
+padding-left: 20px;
+padding-right: 20px;
+}
 }
 @media (min-width: @tablet-width) {
 margin-top: 22px;
-margin-bottom: 22px;
 padding: 0 40px;
 br {
 display: none;
@@ -75,9 +103,6 @@ padding: 0 45px;
 }
 
 .advantages-1__wrapper {
-@media (min-width: @mobile-width-only) {
-display: block;
-}
 @media (min-width: @tablet-width) {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -91,12 +116,13 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .block2 {
-min-height: 256px;
+min-height: 260px;
 background-image: url("../img/main-city-mobile@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
 @media (min-width: @tablet-width) {
+min-height: 256px;
 background-image: url("../img/main-city-tablet@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
@@ -105,6 +131,7 @@ grid-column-start: 2;
 grid-column-end: -1;
 }
 @media (min-width: @desktop-width) {
+min-height: 256px;
 background-image: url("../img/main-city-desktop@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
