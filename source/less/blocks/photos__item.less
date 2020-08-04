@@ -1,8 +1,23 @@
 .photos__item {
 min-height: 414px;
 
+@media (min-width: @desktop-width) {
+min-height: 267px;
+.photos__caption {
+
+background-color: @black;
+}
+
+&--top {
+min-height: 400px;
+}
+}
+
 @media (min-width: @tablet-width) {
 min-height: 347px;
+&--top {
+min-height: 480px;
+}
 &:nth-child(even) {
 .photos__caption {
 background-color: #eaeaea;
@@ -14,20 +29,33 @@ background-color: #f2f2f2;
 }
 }
 }
+
+
 }
 
 .photos__caption {
 min-height: 90px;
 @media (min-width: @tablet-width) {
+min-height: 80px;
 display: flex;
 justify-content: space-between;
 padding-left: 20px;
 padding-right: 20px;
+@media (min-width: @desktop-width) {
+
+}
 &--top {
 background-color: #f2f2f2;
 }
 }
+@media (min-width: @desktop-width) {
+
+
 }
+
+}
+
+
 
 .text__title {
 margin: 0;
@@ -40,6 +68,9 @@ color: @black;
 @media (min-width: @tablet-width) {
 padding-top: 15px;
 }
+@media (min-width: @desktop-width) {
+color: @white;
+}
 }
 
 .text__author {
@@ -48,6 +79,9 @@ font-family: inherit;
 text-transform: none;
 text-align: left;
 color: @darkgray;
+@media (min-width: @desktop-width) {
+color: @white;
+}
 }
 
 .like__number {
@@ -59,6 +93,9 @@ font-weight: bold;
 text-align: left;
 color: @black;
 padding-left: 37px;
+@media (min-width: @desktop-width) {
+color: @white;
+}
 
 &::before {
 content: "";
@@ -74,8 +111,11 @@ opacity: 0.3;
 
 background-image: url("../img/icon-like.svg");
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
+background-image: url("../img/icon-like-white.svg");
+opacity: 1;
 }
+
 }
 }
 

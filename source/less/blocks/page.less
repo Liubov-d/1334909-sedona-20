@@ -31,7 +31,10 @@ color: @darkgray;
 
 .body__container {
 display: block;
+margin: 0 auto;
+@media (min-width: @mobile-width-only) {
 width: @mobile-width-only;
+}
 
 @media (min-width: @tablet-width) {
 width: @tablet-width;
