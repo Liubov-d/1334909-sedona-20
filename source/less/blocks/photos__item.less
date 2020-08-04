@@ -1,23 +1,29 @@
 .photos__item {
 min-height: 414px;
 
+@media (min-width: @tablet-width) {
+min-height: 347px;
+
+&--top {
+min-height: 480px;
+}
+
+}
+
 @media (min-width: @desktop-width) {
 min-height: 267px;
-.photos__caption {
-
-background-color: @black;
-}
 
 &--top {
 min-height: 400px;
 }
+
 }
 
-@media (min-width: @tablet-width) {
-min-height: 347px;
-&--top {
-min-height: 480px;
 }
+
+
+.photos__item {
+@media (min-width: @tablet-width) {
 &:nth-child(even) {
 .photos__caption {
 background-color: #eaeaea;
@@ -30,6 +36,18 @@ background-color: #f2f2f2;
 }
 }
 
+@media (min-width: @desktop-width) {
+&:nth-child(even) {
+.photos__caption {
+background-color: @black;
+}
+}
+&:nth-child(odd) {
+.photos__caption {
+background-color: @black;
+}
+}
+}
 
 }
 
@@ -50,12 +68,9 @@ background-color: #f2f2f2;
 }
 @media (min-width: @desktop-width) {
 
-
 }
 
 }
-
-
 
 .text__title {
 margin: 0;
@@ -133,18 +148,7 @@ margin-top: 23px;
 background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
-&--sunset {
-background-image: url("../img/photo-sunset-mobile@1x.jpg");
-}
-&--cactus {
-background-image: url("../img/photo-cactus-mobile@1x.jpg");
-}
-&--roads {
-background-image: url("../img/photo-roads-mobile@1x.jpg");
-}
-&--bridge {
-background-image: url("../img/main-bridge-mobile@1x.jpg");
-}
+
 
 @media (min-width: @tablet-width) {
 height: 267px;
