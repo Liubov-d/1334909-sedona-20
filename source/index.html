@@ -72,7 +72,11 @@
     </nav>
     <div class="page-header__logo-wrap">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" alt="Седона">
+      </picture>
       </a>
     </div>
   </header>
@@ -85,6 +89,7 @@
 
   <section class="intro">
     <div class="intro__image">
+      <img src="img/text-sedona-index.svg" alt="Welcome to Sedona">
     </div>
 
     <div class="intro__header">
