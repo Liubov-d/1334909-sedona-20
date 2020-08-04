@@ -8,8 +8,39 @@ text-transform: uppercase;
 }
 
 .page__body {
+min-width: @mobile-width-only;
 min-height: 100%;
 margin: 0;
 background-color: @white;
 color: @darkgray;
+}
+
+//.body__container {
+//display: block;
+//width: auto;
+
+//@media (min-width: @tablet-width) {
+//width: auto;
+//}
+
+//@media (min-width: @desktop-width) {
+//width: auto;
+//margin: auto;
+//}
+//}
+
+.body__container {
+display: block;
+margin: 0 auto;
+@media (min-width: @mobile-width-only) {
+width: @mobile-width-only;
+}
+
+@media (min-width: @tablet-width) {
+width: @tablet-width;
+}
+
+@media (min-width: @desktop-width) {
+width: @desktop-width;
+}
 }

@@ -1,6 +1,4 @@
 .advantages {
-padding-left: 20px;
-padding-right: 20px;
 font-size: 14px;
 line-height: 21px;
 font-weight: normal;
@@ -8,23 +6,61 @@ font-weight: normal;
 
 .advantages__block {
 margin: 0;
+min-height: 168px;
 background-color: @lightgray;
 &--active {
+min-height: 190px;
 background-color: @blue;
+}
+@media (min-width: @tablet-width) {
+min-height: 256px;
+
+}
+@media (min-width: @desktop-width) {
+
 }
 }
 
 .advantages__title {
-margin: 0;
-margin-top: 40px;
 font-size: 18px;
 line-height: 26px;
 font-weight: bold;
 text-align: center;
 color: @black;
+@media (min-width: @mobile-width-only) {
+margin: 0;
+padding-top: 25px;
+br {
+display: none;
+}
+}
+@media (min-width: @tablet-width) {
+br {
+display: block;
+}
+font-size: 21px;
+line-height: 26px;
+padding-top: 40px;
+}
 &--active {
 color: @white;
+@media (min-width: @mobile-width-only) {
+padding-top: 35px;
 }
+@media (min-width: @tablet-width) {
+br {
+display: block;
+}
+padding-top: 40px;
+}
+@media (min-width: @desktop-width) {
+padding-top: 50px;
+br {
+display: block;
+}
+}
+}
+
 }
 
 .advantages__number {
@@ -35,15 +71,34 @@ color: @darkgray;
 &--active {
 color: @white;
 }
+@media (min-width: @tablet-width) {
+margin-top: 13px;
+}
 }
 
 .advantages__description {
 margin: 0;
-margin-top: 10px;
+padding-top: 17px;
+padding-left: 35px;
+padding-right: 35px;
 text-align: center;
 color: @darkgray;
 &--active {
 color: @white;
+@media (min-width: @mobile-width-only) {
+padding-left: 20px;
+padding-right: 20px;
+}
+}
+@media (min-width: @tablet-width) {
+margin-top: 22px;
+padding: 0 40px;
+br {
+display: none;
+}
+}
+@media (min-width: @desktop-width) {
+padding: 0 45px;
 }
 }
 
@@ -67,6 +122,7 @@ background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
 @media (min-width: @tablet-width) {
+min-height: 256px;
 background-image: url("../img/main-city-tablet@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
@@ -75,6 +131,7 @@ grid-column-start: 2;
 grid-column-end: -1;
 }
 @media (min-width: @desktop-width) {
+min-height: 256px;
 background-image: url("../img/main-city-desktop@1x.jpg");
 background-position: 50% 50%;
 background-repeat: no-repeat;
