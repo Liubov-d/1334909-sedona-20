@@ -67,6 +67,8 @@ background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: contain;
 background-image: url("../img/icon-twitter.svg");
+
+
 }
 
 &--facebook::before {
@@ -150,6 +152,18 @@ width: 34px;
 height: 34px;
 opacity: 1;
 fill: @black;
+
+&:hover,
+&:focus {
+fill: @blue;
+opacity: 1;
+}
+
+&:active {
+fill: @black;
+opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
 top: 50%;
 margin-top: -17px;

@@ -10,19 +10,21 @@ color: @darkgray;
 }
 
 .page-header__logo-wrap {
-position: absolute;
+
 display: block;
 min-height: 56px;
-top: 0px;
-
-left:50%; 
-margin-left:-51px;
+margin: 0 auto;
 z-index: 2;
 order: 2;
 
 @media (min-width: @tablet-width) {
+position: absolute;
+top: 0px;
+left:50%; 
+margin-left:-51px;
 order: 1;
 }
+
 @media (min-width: @desktop-width) {
 order: 1;
 left:50%; 
