@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+
 // Styles
 
 const styles = () => {
@@ -49,3 +50,7 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// WebP
+
+

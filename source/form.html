@@ -196,7 +196,9 @@
     <div class="filter__wrapper filter__wrapper--attractions">
     <fieldset class="filter__set filter__attractions">
       <legend class="filter__legend">Посещенные <br>достопримечательности:</legend>
+      
       <ul class="filter__list">
+        <div class="attractions__item-wrap">
         <li class="filter__item filter__item--attractions filter__item--devil-bridge">
           <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
           <label class="filter__label filter__label--checkbox" for="devil-bridge-field">Мост Дьявола</label>   
@@ -213,7 +215,9 @@
           <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks-field" disabled>
           <label class="filter__label filter__label--checkbox" for="red-rocks-field">Красные скалы</label>
         </li>
+        </div>
       </ul>
+    
     </fieldset>
   </div>
 
@@ -229,7 +233,10 @@
     </fieldset>
   </div>
 
+  <div class="filter__button-wrap">
     <button class="filter__button button" type="submit">Отправить отзыв</button>
+    <p class="filter__reference">* — обязательные поля</p>
+  </div>
 
   </div>
 
@@ -237,7 +244,7 @@
 </section>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__wrapper--form">
     <p class="page-footer__title">#visitSEDONA</p>
     <div class="page-footer__social social">
       <ul class="social__list">
