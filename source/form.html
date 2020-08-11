@@ -32,6 +32,28 @@
 
 
 <body class="page__body">
+
+<svg style="display: none">
+  
+  <symbol viewBox="0 0 17.5 14.7" id="icon-twitter">
+    <path d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+      c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+      c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+      c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/>
+  </symbol>
+  <symbol viewBox="0 0 8.7 18.9" id="icon-facebook">
+    <path d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2
+  c0,3.1,0,6.2,0,9.3c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
+  </symbol>
+  <symbol viewBox="0 0 20 14" id="icon-youtube">
+    <path d="M17.1,0H2.8C1.3,0,0,1.3,0,2.8v8.3C0,12.7,1.3,14,2.8,14h14.3c1.6,0,2.8-1.3,2.8-2.8V2.8C20,1.3,18.7,0,17.1,0z
+   M7,10.4V3.6L13.8,7L7,10.4z"/>
+  </symbol>
+  <symbol viewBox="0 0 60 60" id="copyright__icon">
+    <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+  </symbol>
+</svg>
+
 <div class="body__container">
 
   <header class="page-header">
@@ -71,8 +93,12 @@
       </div>
     </nav>
     <div class="page-header__logo-wrap">
-      <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+      <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" alt="Седона">
+      </picture>
       </a>
     </div>
   </header>
@@ -84,7 +110,8 @@
     <h1 class="visually-hidden">СЕДОНА</h1>
 
   <section class="intro">
-  <div class="intro__image--inner">
+  <img class="intro__icon intro__icon--inner" src="img/text-sedona.svg" alt="Welcome to Sedona">
+  <div class="intro__image intro__image--inner">
   </div>
   <div class="intro__header">
    <h2 class="intro__title intro__title--inner">Оставьте свой отзыв</h2>
@@ -98,90 +125,113 @@
     <h2 class="visually-hidden">Форма отзыва</h2>
 
   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    <div class="filters__wrap">
 
-    <fieldset class="filter__set filter__name">
+      <div class="filters__wrap--top">
+
+    <div class="filter__wrapper filter__wrapper--name">
+    <fieldset class="filter__set filter__set--text filter__name">
       <legend class="filter__legend">Представьтесь:</legend>
       <ul class="filter__list">
         <li class="filter__item filter__item--name">
-          <label for="name-field">Имя*:</label>
+          <label class="filter__label" for="name-field">Имя*:</label>
           <input class="filter__input" type="text" name="name" id="name-field" value="" placeholder="Петр" required>
         </li>
         <li class="filter__item filter__item--surname">
-          <label for="surname-field">Фамилия:</label>
+          <label class="filter__label" for="surname-field">Фамилия:</label>
           <input class="filter__input" type="text" name="surname" id="surname-field" value="" placeholder="Иванов">
         </li>
         <li class="filter__item filter__item--patronymic">
-          <label for="patronymic-field ">Отчество:</label>
+          <label class="filter__label" for="patronymic-field ">Отчество:</label>
           <input class="filter__input" type="text" name="patronymic" id="patronymic-field" value="" placeholder="Александрович">
         </li>
       </ul>
     </fieldset>
+    </div>
 
-    <fieldset class="filter__set filter__contacts">
-      <legend class="filter__legend">Контактная информация:</legend>
-      <ul class="filter__list">
-        <li class="filter__item filter__item--tel">
-          <label for="tel-field">Контактный телефон*:</label>
-          <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
-        </li>
-        <li class="filter__item filter__item--surname">
-          <label for="email-field">Электронная почта*:</label>
-          <input class="filter__input" type="email" name="email" id="email-field" value="" placeholder="Введите e-mail" required>
-        </li>
-      </ul>
-    </fieldset>
-
+    <div class="filter__wrapper filter__wrapper--impression">
     <fieldset class="filter__set filter__impression">
       <legend class="filter__legend">Ваше общее впечатление:</legend>
       <ul class="filter__list">
-        <li class="filter__item filter__item--positive">
-          <label for="positive-field">Скорее положительное</label>
-          <input class="filter__input" type="radio" name="impression" id="positive-field" value="positive" checked>
+        <li class="filter__item filter__item--impression filter__item--positive">
+          <input class="filter__input filter__input--radio visually-hidden" type="radio" name="impression" id="positive-field" value="positive" checked>
+          <label class="filter__label filter__label--radio" for="positive-field">Скорее положительное</label>
         </li>
-        <li class="filter__item filter__item--negative">
-          <label for="negative-field">Скорее отрицательное</label>
-          <input class="filter__input" type="radio" name="impression" id="negative-field" value="negative">
+        <li class="filter__item filter__item--impression filter__item--negative">
+          <input class="filter__input filter__input--radio visually-hidden" type="radio" name="impression" id="negative-field" value="negative">
+          <label class="filter__label filter__label--radio" for="negative-field">Скорее отрицательное</label>
         </li>
-        <li class="filter__item filter__item--neutral">
-          <label for="neutral-field">Затрудняюсь ответить</label>
-          <input class="filter__input" type="radio" name="impression" id="neutral-field" value="neutral">
+        <li class="filter__item filter__item--impression filter__item--neutral">
+          <input class="filter__input filter__input--radio visually-hidden" type="radio" name="impression" id="neutral-field" value="neutral"  disabled>
+          <label class="filter__label filter__label--radio" for="neutral-field">Затрудняюсь ответить</label>
         </li>
       </ul>
     </fieldset>
+  </div>
 
-    <fieldset class="filter__set filter__attractions">
-      <legend class="filter__legend">Посещенные  достопримечательности:</legend>
+        <div class="filter__wrapper filter__wrapper--contacts">
+    <fieldset class="filter__set filter__set--text filter__contacts">
+      <legend class="filter__legend">Контактная информация:</legend>
       <ul class="filter__list">
-        <li class="filter__item filter__item--devil-bridge">
-          <label for="devil-bridge-field">Мост Дьявола</label>
-          <input class="filter__input" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
+        <li class="filter__item filter__item--tel">
+          <label class="filter__label" for="tel-field">Контактный телефон*:</label>
+          <div class="filter__input-wrap filter__input-wrap--tel">
+          <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
+        </div>
         </li>
-        <li class="filter__item filter__item--bell-mountain">
-          <label for="bell-mountain-field">Гора-Колокол</label>
-          <input class="filter__input" type="checkbox" name="bell-mountain" id="bell-mountain-field" checked>
-        </li>
-        <li class="filter__item filter__item--slide-park">
-          <label for="slide-park-field">Слайд-парк</label>
-          <input class="filter__input" type="checkbox" name="slide-park" id="slide-park" checked>
-        </li>
-        <li class="filter__item filter__item--red-rocks">
-          <label for="red-rocks-field">Красные скалы</label>
-          <input class="filter__input" type="checkbox" name="red-rocks" id="red-rocks-field">
+        <li class="filter__item filter__item--email">
+          <label class="filter__label" for="email-field">Электронная почта*:</label>
+          <div class="filter__input-wrap filter__input-wrap--email">
+          <input class="filter__input" type="email" name="email" id="email-field" value="" placeholder="Введите e-mail" required>
+          </div>
         </li>
       </ul>
     </fieldset>
+  </div>
 
-    <fieldset class="filter__set filter__review">
+  </div>
+
+
+
+    <div class="filter__wrapper filter__wrapper--attractions">
+    <fieldset class="filter__set filter__attractions">
+      <legend class="filter__legend">Посещенные <br>достопримечательности:</legend>
+      <ul class="filter__list">
+        <li class="filter__item filter__item--attractions filter__item--devil-bridge">
+          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
+          <label class="filter__label filter__label--checkbox" for="devil-bridge-field">Мост Дьявола</label>   
+        </li>
+        <li class="filter__item filter__item--attractions filter__item--bell-mountain">
+          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain-field" checked>
+          <label class="filter__label filter__label--checkbox" for="bell-mountain-field">Гора-Колокол</label>
+        </li>
+        <li class="filter__item filter__item--attractions filter__item--slide-park">
+          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
+          <label class="filter__label filter__label--checkbox" for="slide-park-field">Слайд-парк</label>       
+        </li>
+        <li class="filter__item filter__item--attractions filter__item--red-rocks">
+          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks-field" disabled>
+          <label class="filter__label filter__label--checkbox" for="red-rocks-field">Красные скалы</label>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
+
+    <div class="filter__wrapper filter__wrapper--review">
+    <fieldset class="filter__set filter__set--text filter__review">
       <legend class="filter__legend">Опишите свои эмоции:</legend>
       <ul class="filter__list">
         <li class="filter__item filter__item--review">
-          <label for="review-field">Мост Дьявола</label>
-          <textarea class="filter__input" name="review" id="review-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="filter__input filter__input--textarea" name="review" id="review-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="filter__label" for="review-field"></label>          
         </li>
       </ul>
     </fieldset>
+  </div>
 
     <button class="filter__button button" type="submit">Отправить отзыв</button>
+
+  </div>
 
   </form>
 </section>
@@ -192,21 +242,38 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item social__item--twitter button">
-          <a class="social__link visually-hidden" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+          <a class="social__link" href="https://twitter.com/htmlacademy">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg class="social__icon" width="20" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item social__item--facebook button">
-          <a class="social__link visually-hidden" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg class="social__icon" width="20" height="20">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
         <li class="social__item social__item--youtube button">
-          <a class="social__link visually-hidden" href="https://www.youtube.com/htmlacademy">Мы на Ютубе</a>
+          <a class="social__link" href="https://www.youtube.com/htmlacademy">
+            <span class="visually-hidden">Мы на Ютубе</span>
+            <svg class="social__icon" width="20" height="20">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">HTML Академия</span>
-        <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <span class="visually-hidden">Ссылка на HTML Академия</span>
+        <svg class="copyright__icon" width="34" height="34">
+          <use xlink:href="#copyright__icon"></use>
+        </svg>
       </a>
 
     </div>
