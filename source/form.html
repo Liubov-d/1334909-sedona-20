@@ -9,28 +9,6 @@
   <link rel="preload" href="../fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-
-<!--    
-
- 
-<style>
-    /* Используем &lt;html> как слой с макетами */
-  HTML {
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-image: url("img/Form-Mobile-closed.jpg");
-  }
-
-  /* Делаем слой с разметкой полупрозрачным */
-  BODY {
-    opacity: 0.6;
-  }
-
- </style>
-
--->
-
-
 <body class="page__body">
 
 <svg style="display: none">
@@ -173,8 +151,12 @@
     <fieldset class="filter__set filter__set--text filter__contacts">
       <legend class="filter__legend">Контактная информация:</legend>
       <ul class="filter__list">
+        <div class="contacts__item-wrap">
         <li class="filter__item filter__item--tel">
-          <label class="filter__label" for="tel-field">Контактный телефон*:</label>
+          <label class="filter__label" for="tel-field">
+            <p class="filter__label filter__label--tel">Контактный телефон*:</p>
+            <p class="filter__label filter__label--tel-desktop">телефон*:</p>
+          </label>
           <div class="filter__input-wrap filter__input-wrap--tel">
           <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
         </div>
@@ -185,13 +167,11 @@
           <input class="filter__input" type="email" name="email" id="email-field" value="" placeholder="Введите e-mail" required>
           </div>
         </li>
+      </div>
       </ul>
     </fieldset>
   </div>
-
   </div>
-
-
 
     <div class="filter__wrapper filter__wrapper--attractions">
     <fieldset class="filter__set filter__attractions">
@@ -212,7 +192,7 @@
           <label class="filter__label filter__label--checkbox" for="slide-park-field">Слайд-парк</label>       
         </li>
         <li class="filter__item filter__item--attractions filter__item--red-rocks">
-          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks-field" disabled>
+          <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks-field">
           <label class="filter__label filter__label--checkbox" for="red-rocks-field">Красные скалы</label>
         </li>
         </div>
@@ -243,8 +223,13 @@
   </form>
 </section>
 
+
+
+</main>
+
+
 <footer class="page-footer">
-  <div class="page-footer__wrapper--form">
+  <div class="page-footer__wrapper">
     <p class="page-footer__title">#visitSEDONA</p>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -278,7 +263,7 @@
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Ссылка на HTML Академия</span>
-        <svg class="copyright__icon" width="34" height="34">
+        <svg class="copyright__icon" width="40" height="40">
           <use xlink:href="#copyright__icon"></use>
         </svg>
       </a>
@@ -287,7 +272,31 @@
   </div>
   </footer>
 
-</main>
+  <section class="pop-up-failure failure">
+        
+      <h2 class="failure__title">Что-то пошло не так!</h2>
+      <p class="failure__description">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="failure__button failure__button--close button" type="button">Ok</button>
+    
+  </section>
+
+  <section class="pop-up-success success">
+    <div class="success__wrapper">
+      <div class="success__text-wrap">
+        <h2 class="success__title">Ваш отзыв отправлен!</h2>
+        <p class="success__description">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.  В&nbsp;ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="success__button-wrap">
+        <button class="success__button success__button--close button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+    
+  </section>
+
 </div>
 </body>
 </html>
