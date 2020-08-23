@@ -130,4 +130,3 @@ gulp.task("refresh", function (done) {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "cssmin", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
-
