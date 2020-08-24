@@ -1,12 +1,12 @@
 .map__wrapper {
-display: block;
-position: relative;
-width: 100%;
-height: 350px;
-top: 0;
-left: 0;
-padding: 0 auto;
-border: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  padding: 0 auto;
+  border: 0;
 }
 
 .map__hidden {
@@ -14,45 +14,43 @@ border: 0;
 }
 
 .map__google {
-display: block;
-position: absolute;
-width: 100%;
-z-index: 2;
-width: 100%;
-height: 350px;
-border: none;
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  height: 350px;
+  border: none;
 }
 
 .map__img {
-display: block;
-position: absolute;
-z-index: 1;
-width: 100%;
-height: 350px;
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
-background-color: #f4f0ed;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@1x.jpg");
 
-@media (min-resolution: 2dppx) {
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@2x.jpg");
-}
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-mobile@2x.jpg");
+  }
+  background-color: #f4f0ed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 27px 27px, cover;
 
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-size: 27px 27px, cover;
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
 
-@media (min-width: @tablet-width) {
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@1x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
 
-@media (min-resolution: 2dppx) {
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-tablet@2x.jpg");
-}
-}
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
 
-@media (min-width: @desktop-width) {
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
-@media (min-resolution: 2dppx) {
-background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@2x.jpg");
-}
-
-}
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
 }

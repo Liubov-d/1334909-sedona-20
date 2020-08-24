@@ -1,41 +1,39 @@
 .page-header {
-display: block;
-position: relative;
-display: flex;
-flex-direction: column;
-width: 100%;
-min-height: 56px;
-background-color: @white;
-color: @darkgray;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 56px;
+  background-color: @white;
+  color: @darkgray;
 }
 
 .page-header__logo-wrap {
-display: block;
-min-height: 56px;
-margin: 0 auto;
+  display: block;
+  min-height: 56px;
+  margin: 0 auto;
+  z-index: 2;
+  order: 2;
 
-z-index: 2;
-order: 2;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+    z-index: 2;
+    order: 1;
+  }
 
-@media (min-width: @tablet-width) {
-position: absolute;
-top: 0px;
-left:50%;
-margin-left: -51px;
-z-index: 2;
-order: 1;
-}
-
-@media (min-width: @desktop-width) {
-order: 1;
-left:50%;
-margin-left:-93px;
-}
+  @media (min-width: @desktop-width) {
+    order: 1;
+    left: 50%;
+    margin-left: -93px;
+  }
 }
 
 .page-header__logo {
-@media (min-width: @desktop-width) {
-width: 186 px;
-height: auto;
-}
+  @media (min-width: @desktop-width) {
+    width: 186 px;
+    height: auto;
+  }
 }

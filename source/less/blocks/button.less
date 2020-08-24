@@ -1,31 +1,28 @@
 .button {
-display: block;
-vertical-align: middle;
-padding: 15px;
-font: inherit;
-font-size: 21px;
-line-height: 26px;
-font-weight: bold;
-text-align: center;
-text-transform: uppercase;
-color: @white;
-vertical-align: middle;
-background-color: @blue;
-border-style: none;
+  display: block;
+  vertical-align: middle;
+  padding: 15px;
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @blue;
+  border-style: none;
 
-&:hover,
-&:focus {
-background-color: #669ec0;
-}
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
 
-&:active {
-background-color: #5496bd;
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-color: rgba(255,255,255,0.3);
-}
-
-&:disabled {
-background-color: @silver;
-}
-
+  &:disabled {
+    background-color: @silver;
+  }
 }

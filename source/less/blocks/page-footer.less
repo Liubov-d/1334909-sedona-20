@@ -1,147 +1,137 @@
 .page-footer {
-display: block;
-font-size: 14px;
-line-height: 26px;
-font-weight: normal;
-background-color: @white;
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  background-color: @white;
 }
 
 .page-footer__wrapper {
-width: 100%;
+  width: 100%;
 
-@media (min-width: @tablet-width) {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 27px 60px;
-}
-@media (min-width: @desktop-width) {
-max-width: @desktop-width;
-padding: 25px 120px;
-margin-left: auto;
-margin-right: auto;
-}
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 60px;
+  }
 
+  @media (min-width: @desktop-width) {
+    max-width: @desktop-width;
+    padding: 25px 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .page-footer__social {
-min-width: 155px;
-min-height: 48px;
-display: flex;
-justify-content: space-between;
-@media (min-width: @mobile-width-only) {
-padding-top: 15px;
-margin: 0 auto;
-}
-@media (min-width: @tablet-width) {
-padding: 0;
-}
+  min-width: 155px;
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .social__list {
-list-style: none;
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-padding: 0;
-@media (min-width: @mobile-width-only) {
-margin: 0 auto;
-}
-@media (min-width: @tablet-width) {
-margin: 0;
-}
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
-position: relative;
-width: 46px;
-height: 48px;
-margin: 0 3px;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  margin: 0 3px;
 }
 
 .social__icon {
-position: absolute;
-width: 20px;
-height: 20px;
-left: 50%;
-margin-left: -10px;
-fill: @white;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  margin-left: -10px;
+  fill: @white;
 
-&:active {
-opacity: 0.3;
-}
-
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__title {
-width: 166px;
-font-size: 21px;
-line-height: 26px;
-font-weight: bold;
-text-align: left;
-color: @black;
-@media (min-width: @mobile-width-only) {
-text-align: center;
-padding-top: 15px;
-margin-left: auto;
-margin-right: auto;
-}
-@media (min-width: @tablet-width) {
-text-align: left;
-padding-top: 0px;
-margin-left: 0;
-margin-right: 0;
-}
+  width: 166px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: @black;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    padding-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .page-footer__copyright {
-position: relative;
-width: 166px;
-min-height: 40px;
+  position: relative;
+  width: 166px;
+  min-height: 40px;
+  text-align: left;
+  color: @black;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin: 0 auto;
 
-text-align: left;
-color: @black;
-@media (min-width: @mobile-width-only) {
-padding-top: 30px;
-padding-left: 20px;
-margin: 0 auto;
-}
-@media (min-width: @tablet-width) {
-width: 166px;
-margin-left: 0;
-margin-right: 0;
-padding-top: 0px;
-padding-left: 40px;
-}
-@media (min-width: @desktop-width) {
-
-}
+  @media (min-width: @tablet-width) {
+    width: 166px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 40px;
+  }
 }
 
 .copyright__icon {
-position: absolute;
-top: 50%;
-margin-top: 0px;
-right: 15px;
-width: 40px;
-height: 40px;
-opacity: 1;
-fill: @black;
+  position: absolute;
+  top: 50%;
+  margin-top: 0;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  fill: @black;
 
-&:hover,
-&:focus {
-fill: @blue;
-opacity: 1;
-}
+  &:hover,
+  &:focus {
+    fill: @blue;
+    opacity: 1;
+  }
 
-&:active {
-fill: @black;
-opacity: 0.3;
-}
+  &:active {
+    fill: @black;
+    opacity: 0.3;
+  }
 
-@media (min-width: @tablet-width) {
-top: 50%;
-margin-top: -20px;
-right: -5px;
-}
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    margin-top: -20px;
+    right: -5px;
+  }
 }
