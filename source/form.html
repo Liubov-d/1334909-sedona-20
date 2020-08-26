@@ -11,7 +11,7 @@
   <link rel="preload" href="../fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 
-<body class="page__body">
+<body class="page page__body">
 
 <svg style="display: none">
   <symbol viewBox="0 0 17.5 14.7" id="icon-twitter">
@@ -33,7 +33,7 @@
   </symbol>
 </svg>
 
-<div class="body__container">
+<div class="page page__container">
 
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -94,7 +94,7 @@
     <div class="intro__header">
       <h2 class="intro__title intro__title--inner intro__title--inner-form">Оставьте свой отзыв</h2>
       <p class="intro__description intro__description--inner">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях
       </p>
     </div>
   </section>
@@ -105,7 +105,7 @@
   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <div class="filters__wrap">
 
-      <div class="filters__wrap--top">
+      <div class="filters__wrap filters__wrap--top">
 
     <div class="filter__wrapper filter__wrapper--name">
     <fieldset class="filter__set filter__set--text filter__name">
@@ -151,7 +151,7 @@
     <fieldset class="filter__set filter__set--text filter__contacts">
       <legend class="filter__legend">Контактная информация:</legend>
       <div class="filter__list">
-        <div class="contacts__item-wrap">
+        <div class="filter__item filter__item--contacts-wrap">
         <div class="filter__item filter__item--tel">
           <label class="filter__label" for="tel-field">
             <span class="filter__label filter__label--tel">Контактный телефон*:</span>
@@ -177,7 +177,7 @@
     <fieldset class="filter__set filter__attractions">
       <legend class="filter__legend">Посещенные <br>достопримечательности:</legend>
       <div class="filter__list">
-        <div class="attractions__item-wrap">
+        <div class="filter__item filter__item--attractions-wrap">
         <div class="filter__item filter__item--attractions filter__item--devil-bridge">
           <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="devil-bridge" id="devil-bridge-field" checked>
         <label class="filter__label filter__label--checkbox" for="devil-bridge-field">Мост Дьявола</label>

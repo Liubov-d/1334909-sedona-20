@@ -15,7 +15,7 @@
   color: @darkgray;
 }
 
-.body__container {
+.page__container {
   display: block;
   position: relative;
   width: auto;
@@ -27,6 +27,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: auto;
+    width: @desktop-width;
+    height: auto;
+    margin: 0 auto;
+    background-color: @white;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }

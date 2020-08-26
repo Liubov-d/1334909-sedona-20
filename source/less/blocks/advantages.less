@@ -132,7 +132,7 @@
   }
 }
 
-.block__image {
+.advantages__block--image {
   height: 260px;
   width: auto;
   display: block;
@@ -140,12 +140,6 @@
 
   @media (min-width: @tablet-width) {
     height: 256px;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
@@ -157,10 +151,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    background: #b4c1ad url("../img/main-city-desktop@1x.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/main-city-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background: #b4c1ad url("../img/main-city-desktop@2x.jpg");
+      background-image: url("../img/main-city-desktop@2x.jpg");
     }
   }
 }
@@ -174,10 +171,10 @@
 
   @media (min-width: @desktop-width) {
     height: 256px;
-    background: #dcad93 url("../img/main-bridge-desktop@1x.jpg");
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background: #dcad93 url("../img/main-bridge-desktop@2x.jpg");
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
     }
   }
 }
@@ -203,7 +200,7 @@
   }
 }
 
-.advantages-3__wrapper {
+.advantages-2__text-wrapper {
   max-width: @mobile-width-only;
   margin: auto;
 
