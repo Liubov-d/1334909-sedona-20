@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="../css/style.min.css" as="style">
-  <link rel="preload" href="../fonts/ptsans.woff2" as="font">
   <title>Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="../css/style.min.css" as="style">
   <link rel="preload" href="../fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="../fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page page__body">
@@ -76,7 +75,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-        <img src="img/logo-sedona-mobile.svg" alt="Седона">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
       </picture>
       </a>
     </div>
@@ -88,7 +87,7 @@
     <h1 class="visually-hidden">СЕДОНА</h1>
 
   <section class="intro intro--inner">
-    <img class="intro__icon intro__icon--inner" src="img/text-sedona.svg" alt="Welcome to Sedona">
+    <img class="intro__icon intro__icon--inner" src="img/text-sedona.svg" width="460" height="80" alt="Welcome to Sedona">
     <div class="intro__image intro__image--inner">
     </div>
     <div class="intro__header">
@@ -151,7 +150,9 @@
     <fieldset class="filter__set filter__set--text filter__contacts">
       <legend class="filter__legend">Контактная информация:</legend>
       <div class="filter__list">
+
         <div class="filter__item filter__item--contacts-wrap">
+
         <div class="filter__item filter__item--tel">
           <label class="filter__label" for="tel-field">
             <span class="filter__label filter__label--tel">Контактный телефон*:</span>
@@ -159,7 +160,7 @@
           </label>
           <div class="filter__input-wrap filter__input-wrap--tel">
           <input class="filter__input" type="tel" name="tel" id="tel-field" value="" placeholder="Введите телефон" required>
-        </div>
+          </div>
         </div>
         <div class="filter__item filter__item--email">
           <label class="filter__label" for="email-field">Электронная почта*:</label>
@@ -205,7 +206,7 @@
       <div class="filter__list">
         <div class="filter__item filter__item--review">
           <textarea class="filter__input filter__input--textarea" name="review" id="review-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-        <label class="filter__label" for="review-field"></label>
+        <label class="filter__label visually-hidden" for="review-field">Опишите здесь свои эмоции</label>
         </div>
       </div>
     </fieldset>

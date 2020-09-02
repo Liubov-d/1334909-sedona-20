@@ -1,4 +1,5 @@
 .page {
+  width: auto;
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -9,20 +10,20 @@
 
 .page__body {
   min-width: @mobile-width-only;
-  min-height: 100%;
+  height: 100%;
   margin: 0;
   background-color: @white;
   color: @darkgray;
 }
 
 .page__container {
-  display: block;
+
   position: relative;
-  width: auto;
+  width: @mobile-width-only;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    width: @tablet-width;
     margin: 0 auto;
   }
 

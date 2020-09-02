@@ -140,10 +140,15 @@
   background-color: rgba(0, 0, 0, 0.6);
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    width: 389px;
     height: 93px;
     top: 0;
+    left: 93px;
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
   }
 
   &::before {
@@ -158,7 +163,7 @@
 
     @media (min-width: @tablet-width) {
       top: 45px;
-      left: 93px;
+      left: 0;
       width: 389px;
     }
 
@@ -179,7 +184,7 @@
 
     @media (min-width: @tablet-width) {
       top: 42px;
-      left: 206px;
+      left: 113px;
     }
   }
 }

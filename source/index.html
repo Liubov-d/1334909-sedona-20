@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="../css/style.min.css" as="style">
-  <link rel="preload" href="../fonts/ptsans.woff2" as="font">
   <title>Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="../css/style.min.css" as="style">
   <link rel="preload" href="../fonts/ptsans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="../fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page page__body">
@@ -76,7 +75,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-        <img src="img/logo-sedona-mobile.svg" alt="Седона">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
       </picture>
       </a>
     </div>
@@ -89,7 +88,7 @@
   <h1 class="visually-hidden">СЕДОНА — о городе и его окрестностях</h1>
 
   <section class="intro">
-    <img class="intro__icon" src="img/text-sedona-index.svg" alt="Welcome to Sedona">
+    <img class="intro__icon" src="img/text-sedona-index.svg" width="460" height="350" alt="Welcome to Sedona">
     <div class="intro__image">
     </div>
 
@@ -185,7 +184,7 @@
     <h2 class="search-hotel__title">Заинтересовались?</h2>
     <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие   предложения гостиниц в Седоне</p>
       <div class="search-hotel__button">
-        <a class="button" href="#">Найти гостиницу</a>
+        <button class="button" type="button"  onclick="window.location.href='#';">Найти гостиницу</button>
       </div>
   </section>
 
