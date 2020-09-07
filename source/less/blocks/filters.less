@@ -130,14 +130,14 @@
 
 .filter__wrapper--attractions {
   position: relative;
-  margin-bottom: 265px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 145px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   &::before {
@@ -176,6 +176,7 @@
 .filter__item--attractions-wrap {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: minmax(75px, auto);
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -378,22 +379,7 @@
 
 
 .filter__attractions {
-  .filter__item {
-    height: 56px;
-    margin-bottom: 23px;
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 32px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 15px;
-    }
-  }
-
-  div.filter__item:last-child {
-    margin-bottom: 0;
-  }
+  position: relative;
 
   .filter__legend {
     margin-bottom: 40px;
